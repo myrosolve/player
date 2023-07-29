@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.html, body {
+	background: #E4E9ED;
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #E4E9ED;
+}
+
+.player {
+	width: 339px;
+	height: 520px;
+	border-radius: 11px;
+	border: 1px solid rgba(0, 0, 237, 0.50);
+	background: linear-gradient(135deg, #CECECE 0%, #E4E4E4 100%);
+	box-shadow: 8px 8px 20px 0px rgba(87, 87, 87, 0.90), -8px -8px 16px 0px rgba(255, 255, 255, 0.90), 8px -8px 16px 0px rgba(87, 87, 87, 0.20), -8px 8px 16px 0px rgba(87, 87, 87, 0.20), -1px -1px 2px 0px rgba(87, 87, 87, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+	.title {
+		color: #0000ED;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 100;
+		line-height: normal;
+		text-align: center;
+		margin: 25px;
+		margin-top: 22px;
+	}
+	.cover {
+		display: flex;
+		justify-content: center;
+		margin: 37px 0;
+		margin-top: 37px;
+		.cover__img {
+			&.active {
+				animation: rotateAnimation 3s linear infinite;
+			}
+		}
+	}
+	.songname {
+		text-align: center;
+		height: 26.55px;
+	}
+	.progress__container {
+		width: 250px;
+		height: 7px;
+		border-radius: 3.5px;
+		background: linear-gradient(135deg, #C0C0C0 0%, #D4D4D4 100%);
+		box-shadow: 1px 1px 3px 0px rgba(131, 131, 131, 0.90), -1px -1px 2px 0px rgba(255, 255, 255, 0.90), 1px -1px 2px 0px rgba(131, 131, 131, 0.20), -1px 1px 2px 0px rgba(131, 131, 131, 0.20), -1px -1px 2px 0px rgba(131, 131, 131, 0.50) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+		margin: 44px;
+		margin-top: 25px;
+		cursor: pointer;
+		.progress {
+			width: 0px;
+			height: 7px;
+			border-radius: 3.5px;
+			background: #0000ED;
+		}
+	}
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 218px;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: -5px;
+		.btn {
+			cursor: pointer;
+		}
+	}
+}
+
+@keyframes rotateAnimation {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
